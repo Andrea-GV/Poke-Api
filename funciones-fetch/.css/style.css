@@ -1,0 +1,33 @@
+*{
+    margin: 0;      /*      RESETEAMOS LA PÁGINA PARA QUE SEA UN LIENZO EN BLANCO       */
+    padding: 0;
+    box-sizing: border-box;     /* Al meterle el padding y el box-sizing hace que la caja MIDA lo que estrictamente se le pida  */
+}
+
+.characters{
+    max-width: 1004px;
+    margin: 0 auto;     /* con 0 auto automáticamente lo centra en la pantalla*/
+    display: flex;      /*  Con ambos flex, le determinamos cómo queremos que quede */
+    flex-wrap: wrap;
+    gap: 20px ;      /*  Espacio entre las columnas  */
+    padding: 30px 0px;
+}
+
+body{
+    background-color: beige;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.characters article{
+    background-color: white;
+    width: calc(50% -20px);   /*  Calc resta la proporcionalidad para que encuadre */
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 2px 2px 10px #444;   /*  El 1er elemento es el desplazamiento en el eje X, el 2o de la Y, el 3o es un blur (Desenfoque), y el 4º el color que le aplica     X es HORIZONTAL     Y es VERTICAL*/
+    border-radius: 10px;
+    text-align: center;
+}
