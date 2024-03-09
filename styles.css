@@ -1,0 +1,51 @@
+* {     /* Reseteo el formato*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C11E1F;
+    font-family: 'https: //fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap';
+    
+}
+
+.ball{      /* POKEBALL para Logo*/
+    background-image: url ('https: //www.klipartz.com/es/search?q=bola+de+pokemon');
+}
+
+.bckg-img{
+    background-image: url('https: //www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2FXAHO4D&psig=AOvVaw0kaa678UySGXfF2dS-JY1r&ust=1710069015508000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiPqvrSheeEAxVOxbsIHcMBD_gQjhx6BAgAEBc');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.todos-pokemons {
+    max-width: 1004px;
+    margin: 0 auto;
+    /* con 0 auto automáticamente lo centra en la pantalla*/
+    display: flex;
+    /*  Con ambos flex, le determinamos cómo queremos que quede */
+    flex-wrap: wrap;
+    gap: 20px;
+    /*  Espacio entre las columnas  */
+    padding: 30px 0px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.todos-pokemons article {
+    background-color: white;
+    width: calc(50% -20px);
+    /*  Calc resta la proporcionalidad para que encuadre */
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 2px 2px 10px #444;
+    /*  El 1er elemento es el desplazamiento en el eje X, el 2o de la Y, el 3o es un blur (Desenfoque), y el 4º el color que le aplica     X es HORIZONTAL     Y es VERTICAL*/
+    border-radius: 10px;
+    text-align: center;
+}

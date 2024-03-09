@@ -1,4 +1,4 @@
-const url = 'https://rickandmortyapi.com/api/character'     //'https://rickandmortyapi.com/api/characterpage=2' 
+const url = 'https://rickandmortyapi.com/api/character'     //'https://rickandmortyapi.com/api/character?page=2' 
 
 async function cargarDatos(endPoint) {         // para cargar los datos se los pedimos a la url. Las URL de APIS se llaman endpoint
     
