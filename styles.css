@@ -6,7 +6,8 @@
 
 body {
     background-color: #C11E1F;
-    font-family: 'https: //fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap';
+    font-family: oswald;
+    text-transform: capitalize;
     
 }
 
@@ -14,7 +15,7 @@ body {
     background-image: url ('https: //www.klipartz.com/es/search?q=bola+de+pokemon');
 }
 
-.bckg-img{
+.bckg-img{      /*  FONDO DE LA PÁGINA  */
     background-image: url('https: //www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2FXAHO4D&psig=AOvVaw0kaa678UySGXfF2dS-JY1r&ust=1710069015508000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiPqvrSheeEAxVOxbsIHcMBD_gQjhx6BAgAEBc');
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,25 +23,29 @@ body {
 }
 
 .todos-pokemons {
-    max-width: 1004px;
-    margin: 0 auto;
+    /* max-width: 100%;
+    width: 1080px; */
+    margin: 0px 50px;
     /* con 0 auto automáticamente lo centra en la pantalla*/
     display: flex;
     /*  Con ambos flex, le determinamos cómo queremos que quede */
     flex-wrap: wrap;
     gap: 20px;
     /*  Espacio entre las columnas  */
-    padding: 30px 0px;
+    padding: 30px 0px 30px 0px;
 }
 
 img {
     width: 100%;
     height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 }
 
 .todos-pokemons article {
-    background-color: white;
-    width: calc(50% -20px);
+    background-color: rgb(255, 245, 58);
+    max-width: 150px;
+    min-width: 130px;
+    width: calc(10% -20px);
     /*  Calc resta la proporcionalidad para que encuadre */
     border: 1px solid black;
     padding: 10px;

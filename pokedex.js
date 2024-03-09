@@ -46,28 +46,34 @@ async function pokemonOne(pokemon, lugar) {
     const pokeUrlIndividual = pokemon.url;
     const pokePoke = await fetch(pokeUrlIndividual);
     const pokePokeData = await pokePoke.json(); // convertiremos la respuesta en datos --> json()
-    console.log(pokePokeData.id)
+    console.log(pokePokeData)
     const pokemon2 = {
         name: pokePokeData.name,
-        image: pokePokeData.sprites['front_default'],
+        image: pokePokeData.sprites.other['official-artwork']['front_default'],   /*  other.official-artwork.front_default   QUIERO PONER SPRITES-OTHER-OFFICIAL-ARTWORK-FRONT_DEFAULT*/
         type: pokePokeData.types.map((type) => type.type.name).join(', '),
         id: pokePokeData.id,
     };
-        // console.log(pokemon2)
+    // console.log(pokemon2)
+    // Contenido de los article
     const article = document.createElement('article'); //<article></article>
     const figure = document.createElement('figure');  //<figure></figure>
     const img = document.createElement('img'); //<img>
+    const h3 = document.createElement('h3');
+    const span = document.createElement('span');
+    const p = document.createElement('p');
+    const p1 = document.createElement('p');
+
+    // Contenido de cada elemento-article
     img.src = pokemon2.image
     img.alt = pokemon2.name
-    const h3 = document.createElement('h3');
     h3.textContent = pokemon2.name
-    const p = document.createElement('p');
-    const span = document.createElement('span');
-    p.textContent = `Tipo: ${pokemon2.type}. ID:${pokemon2.id}`    ;     /*  REVISAR ESTO PARA PONER TIPO TIERRA. AGUA. ETC */
-    span.textContent = `ID:${pokemon2.id}`;
-
+    span.textContent = `# ${pokemon2.id}`;
+    p.textContent = `Tipo:`;     /*  REVISAR ESTO PARA PONER TIPO TIERRA. AGUA. ETC */
+    p1.textContent = pokemon2.type;
+   
+    // Clases de los elementos-article
     figure.appendChild(img)
-    article.append(figure, h3, p);
+    article.append(figure, h3, span, p, p1);
 
     lugar.appendChild(article)
 }
