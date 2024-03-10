@@ -3,23 +3,78 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    cursor: url(./puntero2.png), auto;      /* ¡¡¡ NO FUNCIONA EL CURSOR  y no sé por qué !!!*/
+}
 body {
-    background-color: #C11E1F;
+    background-color: #FE0000;
     font-family: oswald;
     text-transform: capitalize;
-    
 }
 
-.ball{      /* POKEBALL para Logo*/
-    background-image: url ('https: //www.klipartz.com/es/search?q=bola+de+pokemon');
+header {
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    img {
+        margin-left: 10%;
+        width: 80%;
+        height: 5%;
+        align-items: center;
+            img {
+                width: 50%;
+            }
+        }
+}
+.logo2{
+    display: none;
+}
+.separador{
+    width: 100%;
+    height: 25%;
 }
 
-.bckg-img{      /*  FONDO DE LA PÁGINA  */
-    background-image: url('https: //www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2FXAHO4D&psig=AOvVaw0kaa678UySGXfF2dS-JY1r&ust=1710069015508000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwiPqvrSheeEAxVOxbsIHcMBD_gQjhx6BAgAEBc');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+#contenedor{
+    position: relative;
+    height: auto;
+}
+
+.nav-pokemons{
+    position: absolute;
+    width: 60%;
+    height: 150px;
+    margin-left: 22%;
+    margin-top: 32%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Asegura que el menú esté por encima de la sección de Pokémon */
+    /* background-color: white; para probar si lo pillaba */
+    padding: 10px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: space-around;
+
+        li{
+            margin: 10px;
+            box-sizing: border-box;
+            font-size: 20px;
+
+            li:hover{
+                font-size: 25px ;
+            }
+        }
+    }
+}
+
+.nav-pokemons ul li:hover{
+            font-size: 25px;
+}
+
+.todos-pokemons article:hover{
+
+    border: 2px solid white;
 }
 
 .todos-pokemons {
@@ -35,16 +90,10 @@ body {
     padding: 30px 0px 30px 0px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
-}
-
 .todos-pokemons article {
-    background-color: rgb(255, 245, 58);
-    max-width: 150px;
-    min-width: 130px;
+    background-color: rgb(249, 242, 107);
+    max-width: 185px;
+    min-width: 150px;
     width: calc(10% -20px);
     /*  Calc resta la proporcionalidad para que encuadre */
     border: 1px solid black;
@@ -53,4 +102,190 @@ img {
     /*  El 1er elemento es el desplazamiento en el eje X, el 2o de la Y, el 3o es un blur (Desenfoque), y el 4º el color que le aplica     X es HORIZONTAL     Y es VERTICAL*/
     border-radius: 10px;
     text-align: center;
+
+    img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+        }
+    h3{
+        font-size: 30px;
+        color: #3475C1;
+    }
+    span{
+        font-size: 25px;
+        font-weight: bold;
+        color: #900202;
+    }
+    .pPokemon{
+        font-size: 20px;
+        }
+
+    .p1Pokemon {
+        font-size: 20px;
+    }
+}
+.todos-pokemons article img:hover {
+    height: 110%;
+}
+
+.tipo-normal{
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-fighting {
+    background-color: rgb(248, 110, 4);
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-flying {
+    background-color: #81B9EF;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-poison {
+    background-color: #8F41CB;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-ground {
+    background-color: #915121;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-rock {
+    background-color: #B0AB82;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-bug {
+    background-color: #92A212;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-ghost {
+    background-color: #3955A5;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-steel {
+    background-color: #60A2B9;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-fire {
+    background-color: #E62829;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-water {
+    background-color: #1376E5;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-grass {
+    background-color: #3DA224;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-electric {
+    background-color: #FAC100;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-psychic {
+    background-color: #EF4179;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-ice {
+    background-color: #3FD8FF;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-dragon {
+    background-color: #2866DE;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-dark {
+    background-color: #50413F;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-fairy {
+    background-color: #EF71F0;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-unknown {
+    background-color: #d7b5f5;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+.tipo-shadow {
+    background-color: rgb(71, 70, 70);
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    margin: 0 10px;
+    padding: 5px 10px;
 }
