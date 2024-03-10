@@ -7,7 +7,8 @@ html{
     cursor: url(./puntero2.png), auto;      /* ¡¡¡ NO FUNCIONA EL CURSOR  y no sé por qué !!!*/
 }
 body {
-    background-color: #FE0000;
+    /* background-color: #FE0000; */
+    background-image: url('./fondo.png');
     font-family: oswald;
     text-transform: capitalize;
 }
