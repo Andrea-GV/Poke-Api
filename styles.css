@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 html{
-    cursor: url(./puntero2.png), auto;      /* ¡¡¡ NO FUNCIONA EL CURSOR  y no sé por qué !!!*/
+    cursor: url(./assets/puntero2pq.png), auto;      /* ¡¡¡ NO FUNCIONA EL CURSOR  y no sé por qué !!!*/
 }
 body {
     /* background-color: #FE0000; */
-    background-image: url('./fondo.png');
+    background-image: url('./assets/fondo.png');
     font-family: oswald;
     text-transform: capitalize;
 }
